@@ -14,7 +14,7 @@ namespace Assignment1_n01655606_Ashim_Shrestha.Controllers
         /// </summary>
         /// <param name="days">The total number of days</param>
         /// <returns>
-        /// String with the total price after tax 
+        /// String with the total price after tax along with the details about number of fortnights and the taxable amount
         /// </returns>
         /// 
 
@@ -30,7 +30,7 @@ namespace Assignment1_n01655606_Ashim_Shrestha.Controllers
             // storing the tax percentage
             double HST = 0.13;
             // the total number of FNs
-            double totalFN = days / 14;
+            double totalFN = (days + 14) / 14;
 
             // calculating the total costs
             double totalFNCost = totalFN * charge;
@@ -41,7 +41,7 @@ namespace Assignment1_n01655606_Ashim_Shrestha.Controllers
             double grandTotal = totalFNCost + totalHST;
 
             // returning the total price detail along with the final price after tax
-            return ("\"" + days + " fortnights at $5.50/FN = $" + totalFNCost + " CAD\"\n\"HST 13% = $" + totalHST + " CAD\"\n\"Total = $" + grandTotal + " CAD\"");
+            return ("\"" + totalFN + " fortnights at $5.50/FN = $" + totalFNCost + " CAD\"\x0A\"HST 13% = $" + totalHST + " CAD\"\x0A\"Total = $" + grandTotal + " CAD\"");
         }
     }
 }
