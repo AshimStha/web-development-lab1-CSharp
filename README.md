@@ -14,15 +14,15 @@ A repository to store all the course content files for **'Web Development Lab 1 
 
 This class is about learning to create Web APIs using C# programming language. It also covers several topics involved in object oriented programming.[^1]
 
-![The Rock](./_readme/CodeJoke.jpg)
+![The Rock](./_readme/csharpImg.jpg)
 
-_A programming meme taken from the movie "Journey to the center of the Earth"_
+_A programming meme taken from the cartoon show "Spongebob Squarepants"_
 
 > :memo: **Note:** This class is a little difficult but Christine is super helpful and goes through every details.
 
 [^note]: This class takes place online every Tuesday from 3:20 PM - 6:00 PM.
 
-## Code Sample - Markdown
+## Code Sample - C#
 
 ```csharp
 public string SpecialDay(int month, int day)
