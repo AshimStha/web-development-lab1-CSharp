@@ -29,19 +29,7 @@ public string SpecialDay(int month, int day)
         {
             // variable to store the output
             String output;
-
-            // checking for invalid inputs
-            if (month < 1 || month > 12 || day < 1 || day > 31)
-            {
-                // output for invalid input
-                output = "Invalid month or day.";
-            }
-            // checking if the provided date is before Feb 18
-            else if (month < 2 || (month == 2 && day < 18))
-            {
-                // storing the output in the variable
-                output = "Before";
-            }
+            
             // checking if the provided date is Feb 18
             else if (month == 2 && day == 18)
             {
